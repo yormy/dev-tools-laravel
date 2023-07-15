@@ -1,0 +1,39 @@
+{
+    "name": "yormy/dev-tools-laravel",
+    "description": "",
+    "keywords": [
+        "yormy"
+    ],
+    "homepage": "https://github.com/yormy/dev-tools-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yormy",
+            "email": "dev@yormy.com",
+            "homepage": "https://yormy.com",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "jaschilz/php-coverage-badger": "^2.0",
+        "laravel/pint": "^1.10",
+        "orchestra/testbench": "^7|^8",
+        "phpmd/phpmd": "^2.13",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9|^10",
+        "psalm/plugin-laravel": "^2.8",
+        "spatie/laravel-ray": "^1.32"
+        "squizlabs/php_codesniffer": "^3.7",
+        "thibautselingue/local-php-security-checker-installer": "^1",
+        "vimeo/psalm": "^5.13",
+        "brianium/paratest": "^7"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
