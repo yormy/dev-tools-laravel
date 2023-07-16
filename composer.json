@@ -54,13 +54,6 @@
             "local-php-security-checker-installer && local-php-security-checker"
         ]
     },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Yormy\\DevToolsLaravel\\DevToolsLaravelServiceProvider"
-            ]
-        }
-    },
     "config": {
         "sort-packages": true,
         "allow-plugins": {
