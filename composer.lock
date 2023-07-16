@@ -11588,13 +11588,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Yormy\\AssertLaravel\\AssertLaravelServiceProvider"
+                        "Yormy\\DevToolsLaravel\\DevToolsLaravelServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Yormy\\AssertLaravel\\": "src"
+                    "Yormy\\DevToolsLaravel\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
