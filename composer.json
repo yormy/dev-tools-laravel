@@ -14,7 +14,9 @@
             "role": "Developer"
         }
     ],
-    "require-dev": {
+    "require": {
+        "brianium/paratest": "^7",
+        "friendsofphp/php-cs-fixer": "^3.21",
         "jaschilz/php-coverage-badger": "^2.0",
         "laravel/pint": "^1.10",
         "orchestra/testbench": "^7|^8",
@@ -22,11 +24,14 @@
         "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "^9|^10",
         "psalm/plugin-laravel": "^2.8",
+        "roave/security-advisories": "dev-master",
         "spatie/laravel-ray": "^1.32",
         "squizlabs/php_codesniffer": "^3.7",
         "thibautselingue/local-php-security-checker-installer": "^1",
         "vimeo/psalm": "^5.13",
-        "brianium/paratest": "^7"
+        "yormy/assert-laravel": "^1.0",
+        "orchestra/testbench-browser-kit": "^v7|^8",
+        "orchestra/testbench-dusk": "^v7|^8"
     },
     "config": {
         "sort-packages": true,
