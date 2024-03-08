@@ -14,6 +14,12 @@
             "role": "Developer"
         }
     ],
+    "repositories" : [
+        {
+            "type": "path",
+            "url": ".."
+        }
+    ],
     "require": {
         "brianium/paratest": "^7",
         "friendsofphp/php-cs-fixer": "^3.21",
@@ -29,7 +35,7 @@
         "squizlabs/php_codesniffer": "^3.7",
         "thibautselingue/local-php-security-checker-installer": "^1",
         "vimeo/psalm": "^5.13",
-        "yormy/assert-laravel": "^1.0"
+        "yormy/assert-laravel": "dev-master"
     },
     "scripts": {
         "---------- STYLE ---------- ": "",
