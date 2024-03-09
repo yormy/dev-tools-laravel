@@ -25,7 +25,7 @@
         "friendsofphp/php-cs-fixer": "^3.21",
         "jaschilz/php-coverage-badger": "^2.0",
         "laravel/pint": "^1.10",
-        "orchestra/testbench": "^7|^8",
+        "orchestra/testbench": "^8.21",
         "phpmd/phpmd": "^2.13",
         "phpstan/phpstan": "^1.10.52",
         "phpunit/phpunit": "^9|^10",
@@ -50,7 +50,6 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "---------- POST ---------- ": "",
         "post-update-cmd": [
-            "composer audit"
         ]
     },
     "autoload": {
