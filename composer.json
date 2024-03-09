@@ -27,13 +27,11 @@
         "laravel/pint": "^1.10",
         "orchestra/testbench": "^7|^8",
         "phpmd/phpmd": "^2.13",
-        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan": "^1.10.52",
         "phpunit/phpunit": "^9|^10",
-        "psalm/plugin-laravel": "^2.8",
         "roave/security-advisories": "dev-master",
         "spatie/laravel-ray": "^1.32",
         "squizlabs/php_codesniffer": "^3.7",
-        "vimeo/psalm": "^5.13",
         "yormy/assert-laravel": "dev-master"
     },
     "scripts": {
@@ -44,8 +42,6 @@
         "phpcs": "phpcs --standard=PSR2 -s --exclude=Generic.Files.LineLength --standard=./phpcs.xml --report-file=phpcs-report.txt",
         "---------- ANALYSIS ---------- ": "",
         "phpstan": "vendor/bin/phpstan analyze src --error-format=raw --level=4",
-        "psalm": "vendor/bin/psalm --no-diff --no-cache --report-show-info=false --report=psalm-report.txt",
-        "psalm-debug": "vendor/bin/psalm --no-cache --debug --debug-by-line",
         "---------- TEST ---------- ": "",
         "test": "vendor/bin/phpunit tests/Features tests/Unit --colors=always --testdox",
         "test:unit": "vendor/bin/paratest --colors=always --testdox --testsuite Unit",
@@ -54,7 +50,7 @@
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
         "---------- POST ---------- ": "",
         "post-update-cmd": [
-            "composer auditr"
+            "composer audit"
         ]
     },
     "autoload": {
