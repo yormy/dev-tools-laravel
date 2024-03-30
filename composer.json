@@ -21,10 +21,13 @@
         }
     ],
     "require": {
+        "barryvdh/laravel-ide-helper": "^3.0",
         "brianium/paratest": "^7",
         "friendsofphp/php-cs-fixer": "^3.21",
         "jaschilz/php-coverage-badger": "^2.0",
         "laravel/pint": "^1.10",
+        "nunomaduro/larastan": "^2.9",
+        "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "^8.21",
         "phpmd/phpmd": "^2.13",
         "phpstan/phpstan": "^1.10.52",
@@ -40,8 +43,17 @@
         "cs-fixer" : "phpcbf",
         "md": "vendor/bin/phpmd . html cleancode --reportfile report.html",
         "phpcs": "phpcs --standard=PSR2 -s --exclude=Generic.Files.LineLength --standard=./phpcs.xml --report-file=phpcs-report.txt",
+        "---------- FIX ---------- ": "",
+        "insights:fix": "./vendor/bin/testbench insights --fix",
+        "ide-helpers": "./vendor/bin/testbench clear-compiled && ./vendor/bin/testbench ide-helper:generate && ./vendor/bin/testbench ide-helper:models --write && ./vendor/bin/testbench ide-helper:meta",
         "---------- ANALYSIS ---------- ": "",
-        "phpstan": "vendor/bin/phpstan analyze src --error-format=raw --level=4",
+        "insights": "./vendor/bin/testbench insights",
+        "stan": "./vendor/bin/phpstan analyse --memory-limit=2G",
+        "stan:baseline": "./vendor/bin/phpstan analyse --memory-limit=2G --generate-baseline",
+        "coverage:check" : "composer coverage:clover && php coverage-checker.php clover.xml 50",
+        "coverage:report" : "php -dpcov.enabled=1 -dpcov.directory=. -dpcov.exclude='~vendor~' ./vendor/bin/phpunit --coverage-html ./meta/coverage ",
+        "coverage:text" : "php -dpcov.enabled=1 -dpcov.directory=. -dpcov.exclude='~vendor~' ./vendor/bin/phpunit --coverage-text ",
+        "coverage:clover" : "php -dpcov.enabled=1 -dpcov.directory=. -dpcov.exclude='~vendor~' ./vendor/bin/phpunit --coverage-clover clover.xml",
         "---------- TEST ---------- ": "",
         "test": "vendor/bin/phpunit tests/Features tests/Unit --colors=always --testdox",
         "test:unit": "vendor/bin/paratest --colors=always --testdox --testsuite Unit",
@@ -65,7 +77,8 @@
     "config": {
         "sort-packages": true,
         "allow-plugins": {
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "minimum-stability": "dev",
