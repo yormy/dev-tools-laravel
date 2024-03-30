@@ -26,7 +26,6 @@
         "friendsofphp/php-cs-fixer": "^3.21",
         "jaschilz/php-coverage-badger": "^2.0",
         "laravel/pint": "^1.10",
-        "nunomaduro/larastan": "^2.9",
         "nunomaduro/phpinsights": "^2.11",
         "orchestra/testbench": "^8.21",
         "phpmd/phpmd": "^2.13",
@@ -82,5 +81,8 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "larastan/larastan": "^2.9"
+    }
 }
