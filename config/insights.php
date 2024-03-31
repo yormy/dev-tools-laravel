@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use NunoMaduro\PhpInsights\Domain\Insights\CyclomaticComplexityIsHigh;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenGlobals;
 use NunoMaduro\PhpInsights\Domain\Insights\ForbiddenNormalClasses;
