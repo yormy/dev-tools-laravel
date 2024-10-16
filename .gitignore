@@ -1,2 +1,9 @@
 .idea
+.php_cs
+.php_cs.cache
+.phpunit.result.cache
+build
+coverage
+psalm.xml
 vendor
+node_modules
