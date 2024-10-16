@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fa501a4aca3c619a97a017478957f40",
+    "content-hash": "e1c4e1f212778de3db94d4882a74146a",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -12768,7 +12768,7 @@
         },
         {
             "name": "yormy/assert-laravel",
-            "version": "dev-master",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yormy/assert-laravel.git",
@@ -12794,7 +12794,6 @@
                 "phpstan/phpstan": "^1",
                 "phpunit/phpunit": "^9|^10"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -12827,7 +12826,7 @@
             ],
             "support": {
                 "issues": "https://github.com/yormy/assert-laravel/issues",
-                "source": "https://github.com/yormy/assert-laravel/tree/master"
+                "source": "https://github.com/yormy/assert-laravel/tree/1.0.4"
             },
             "time": "2024-10-16T13:31:48+00:00"
         },
@@ -13235,8 +13234,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "roave/security-advisories": 20,
-        "yormy/assert-laravel": 20
+        "roave/security-advisories": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
