@@ -28,7 +28,7 @@
         "jaschilz/php-coverage-badger": "^2.0",
         "laravel/pint": "^1.15",
         "nunomaduro/phpinsights": "^2.11",
-        "orchestra/testbench": "^9",
+        "orchestra/testbench": "^8|^9",
         "phpmd/phpmd": "^2.13",
         "phpstan/phpstan": "^1.11",
         "phpunit/phpunit": "^10",
