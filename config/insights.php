@@ -31,6 +31,7 @@ return [
         FunctionLengthSniff::class,
 
         CyclomaticComplexityIsHigh::class,
+        \NunoMaduro\PhpInsights\Domain\Insights\SyntaxCheck::class, // workaround to fix php insights issue
     ],
 
     'config' => [
