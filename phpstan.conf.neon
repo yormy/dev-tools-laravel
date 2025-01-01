@@ -9,10 +9,8 @@ parameters:
     excludePaths:
         analyse:
             - ./vendor/**
-            - src/Tests
+            - ./tests/**
 
-    checkMissingIterableValueType: false
-    checkGenericClassInNonGenericObjectType: false
     treatPhpDocTypesAsCertain: false
 
    # reportUnmatchedIgnoredErrors: false
